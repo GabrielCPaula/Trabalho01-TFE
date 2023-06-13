@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade 07</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<script src="javascript.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Teste de Front-End</h1>
+		<nav>
+            <a href="index.html">
+                <button>Inicio</button>
+            </a>
+            <a href="dicas.html">
+                <button>Dicas</button>
+            </a>
+            <a href="teste.html">
+                <button>Teste</button>
+            </a>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Quais testes serão realizados?</h2>
+			<p>Para remover, basta digitar o número da linha que deseja remover.</p>
+			<main class="main2">
+				<section class="section2">
+					<ul class="lista" id="lista">
+	
+					</ul>
+					<br>
+					<input type="text" id="tarefa">
+					<br>
+					<br>
+					<button onclick="adiciona()" class="button2">Adicionar</button>
+					<button onclick="remover()" class="button2">Remover</button>
+				</section>
+			</main>
+            
+        </section>
+        <section>
+            <h2>Testes realizados e seus resultados</h2>
+            <section class="section3">
+				<br>
+				<form id="formCadastro">
+					Teste realizado:
+					<br>
+					<input type="text" id="txtTeste" required class="input2">
+					<br>
+					<br>
+					Entrada:
+					<br>
+					<input type="text" id="txtEntrada" required class="input2">
+					<br>
+					<br>
+					Resultado esperado:
+					<br>
+					<input type="text" id="txtResultE" required class="input2"> 
+					<br>
+					<br>
+					Resultado:
+					<br>
+					<input type="text" id="txtResult" required class="input2">
+					<br>
+					<br>
+					Situação:
+					<br>
+					<input type="text" id="txtSituacao" required class="input2"> 
+					<br>
+					<br>
+					<button onclick="preencheObjeto()" class="button2">Salvar</button>
+					
+				</form>
+			</section>
+			<br>
+			<br>
+		<section class="sectionTwo">
+		<br>
+		<button  onclick="mostrarResultado()" class="button2">Mostrar</button>
+		<br>
+		<label id="lblMostrarResult" class="label2">...</label>
+		<br>
+		</section>
+        </section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Todos os direitos reservados</p>
+	</footer>
+</body>
+</html>
